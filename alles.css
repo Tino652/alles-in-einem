@@ -1,0 +1,46 @@
+
+.navbar {
+    background-color: #e5e5e5;
+    height: 50px;
+    top: 0px;
+  }
+  
+  nav ul {
+  
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 0px;
+  }
+  
+  nav {
+    float: right;
+    margin: 0;
+    top: 0px;
+  }
+  
+  
+  
+  nav a {
+    text-decoration: none;
+    color: #fafafa;
+    display: inline-block;
+    padding-top: 18px;
+    top: 0px;
+  }
+  
+  nav a:hover {
+    color: #9fc7dd;
+    top: 0px;
+  }
+  
+  nav a:active {
+    font-weight: bold;
+    top: 0px;
+  }
+  
+  * {
+    font-family: Montserrat, sans-serif;
+    top: 0px;
+  }
+         

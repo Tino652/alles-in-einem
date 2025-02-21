@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+    
+    <head>
+        <title>Pinnwand - neuer Eintrag</title>
+       <style>
+        body {
+            background-color: rgb(143, 238, 112);
+            font-family: sans-serif;
+            color: #696666;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+       html { 
+  height: 100%; 
+  display: table; 
+  width: 100%; 
+} 
+body { 
+  display: table-cell; 
+  vertical-align: middle; 
+} 
+.navbar {
+      background-color: #e5e5e5;
+      height: 50px;
+    }
+    
+    nav ul {
+    
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    nav {
+      float: right;
+      margin: 0;
+    }
+    
+    
+    
+    nav a {
+      text-decoration: none;
+      color: #111111;
+      display: inline-block;
+      padding-top: 39px;
+    }
+    
+    nav a:hover {
+      color: #9fc7dd;
+    }
+    
+    nav a:active {
+      font-weight: bold;
+    }
+    </style>
+        
+        
+    </head>
+<body>
+    <nav>
+        <ul>
+           <li><a href="../index.html"> Zurück</a></li>
+           
+       </ul>
+     </nav>
+   
+    <h1>Pinnwand - neuer Eintrag</h1>
+    <p></p>
+    <form method="post" action="speichern.php">
+        Biete oder Suche?: <input type="text" size="10" maxlength="40" name="Biete oder Suche?" /><br>
+       <br>
+        Titel: <input type="text" size="10" maxlength="10" name="Titel" />
+        <p></p>
+        Preisvorstellung: <input type="text" size="10" maxlength="40" name="Preisvorstellung" /><br />
+        <p></p>
+        Kontakt: <input type="text" size="10" maxlength="10" name="Kontakt" />
+        <p></p>
+        Details: <input type="text" size="10" maxlength="40" name="Details" /><br />
+        <input type="submit" value="Send" />
+        
+        <p></p>
+    </form>
+    <p></p>
+    <a href="pinnwand.html">Zurück zur Pinnwand</a>
+</body>

@@ -1,0 +1,63 @@
+print_r($daten);
+$daten = [
+    ["timestamp1" => "2025-02-12 10:15:36", "art" => "Suche", "titel" => "Kaffeemaschiene", "preis" => 20€, "Kontakt"],
+    ["timestamp2" => "2025-02-12 10:15:38", "art" => "Biete", "titel" => "SD-Karte mit 32GB und Wlan", "preis" => 50€, ],
+];
+
+usort($daten, function ($a, $b) {
+    $zeitpunktA = strtotime($a["timestamp1"]); // Wandelt den Zeitpunkt-String in einen Unix-Timestamp um
+    $zeitpunktB = strtotime($b["timestamp2"]);
+    return $zeitpunktA - $zeitpunktB; // Aufsteigende Sortierung
+});
+
+
+
+
+
+
+
+
+
+
+$daten = ausgabe();
+
+
+echo "Foreach-Schleife:";
+foreach ($daten AS $art) {
+    print_r($art);
+}
+print_r($daten);
+print_r ($daten [1]);
+print ("[timestamp] => 2025-02-12 10:15:36");
+print ("[timestamp] => 2025-02-12 10:15:38");
+$zahlalt = 36;
+$zahlneu = 38;
+if ($zahlalt > $zahlneu)
+print ("[timestamp] => 2025-02-12 10:15:36");
+print ("[timestamp] => 2025-02-12 10:15:38");
+else
+print ("[timestamp] => 2025-02-12 10:15:38");
+print ("[timestamp] => 2025-02-12 10:15:36");
+
+
+
+
+
+
+
+
+
+// Debugging: Ausgabe der Datenstruktur (besser lesbar)
+echo "<pre>"; // <pre> Tag für formatierte Ausgabe im Browser
+print_r($daten);
+echo "</pre>";
+
+// Überprüfen, ob Daten vorhanden sind, bevor darauf zugegriffen wird
+
+
+const button = document.getElementById('farbeAendernButton');
+   const birne = document.getElementById('meinGegenstand');
+
+   button.addEventListener('click', () => {
+       gegenstand.style.backgroundColor = gegenstand.style.backgroundColor === 'yellow';
+   });
